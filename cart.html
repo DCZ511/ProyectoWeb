@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/cart.css" />
+	<script src="./js/platos.js"></script>
+	<script src="./js/cartService.js" defer></script>
+	<script src="./js/cart.js" defer></script>
+	<title>Lo de Diego - Carrito</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="./index.html"><img src="./img/logo.jpg" alt="Logo" id="logo" /></a>
+			<div>
+				<a href="./cart.html" id="cart"><img src="./img/iconos/shopping-cart.png" alt="" /><span id="cuenta-carrito">0</span></a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<p id="carrito-vacio">
+			Ups! El carrito está vacío,
+			<a href="./index.html">elige algunos productos</a>
+		</p>
+		<section id="cart-container"></section>
+		<section id="totales">
+			<p>Total unidades: <span id="cantidad">0</span></p>
+			<p>Total precio: $<span id="precio">0</span></p>
+			<button id="pagar">Pagar</button>
+			<button id="reiniciar">Vaciar Carrito</button>
+		</section>
+	</main>
+
+    <footer class="footer" id="footer">
+        <div class="direccion">
+            <h3>Contacto</h3>
+            <ul>
+                <p>Av. de las Américas 1000</p>
+                <p>CABA</p>
+                <p>Tel: 11-3333-4444</p>
+                <p>Email: platos@lodediego.com.ar</p>
+            </ul>
+        </div>
+        <div class="redes">
+            <h3>Redes</h3>
+            <ul>
+                <a href="#"><img src="img/iconos/icon-whatsapp.png" alt="whatsapp"></a>
+                <a href="#"><img src="img/iconos/icon-instagram.png" alt="instagram"></a>
+                <a href="#"><img src="img/iconos/icon-facebook.png" alt="facebook"></a>
+            </ul>
+        </div>
+       <p class="designer">Powered by Diego Cruz - 2024</p>
+    </footer>
+</body>
+
+</html>

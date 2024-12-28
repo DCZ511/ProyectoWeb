@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root{
+  --color-acento: #ee6130;
+  --color-acento-claro: #a48f88;
+  --color-texto: rgb(0, 0, 0);
+}
+
+body{
+  margin: 0;
+  font-family: "Poppins", serif;
+  background-color: #6c6970;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h3, p{
+  margin: 5px;
+}
+
+h2{
+  color: #FFFFFF;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+.escondido{
+  display: none;
+}
+
+a{
+  background-color: unset;
+  border:unset;
+  cursor:pointer;
+  text-decoration: none;
+  transition: 200ms;
+  color: var(--color-texto);
+}
+
+button{
+  transition: 200ms;
+}
+
+a:hover:not(#cart), button:hover{
+  color: var(--color-acento);
+}
+
+/* Header */
+header{
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)),
+    url(../img/Cocina-de-autor.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    min-height: 70vh;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 60px;
+}
+
+#logo{
+  height: 40px;
+  margin: 20px;
+}
+
+header nav div{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header nav img{
+  height: 35px;
+}
+
+#cuenta-carrito{
+  position: absolute;
+  background-color: var(--color-acento);
+  border-radius: 100%;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  aspect-ratio: 1;
+  text-align: center;
+  /* margin-bottom: 15px; */
+}
+
+/*Nombre central*/
+.header-txt{
+  padding: 0 200px;
+  text-align: center;
+}
+
+.header-txt h1{
+  font-size: 70px;
+  line-height: 80px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.header-txt p{
+  font-size: 22px;
+  color: #ECEBEB;
+  margin-bottom: 20px;
+}
+
+.footer{
+  margin-top: 100px;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #a29797;
+}
+
+.direccion h3{
+  padding: 10px;
+  color: #000000;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.direccion p{
+  font-size: 16px;
+  color: #000000;
+  margin-top: 10px;
+  display: block;
+}
+
+.redes h3{
+  padding: 10px;
+  color: #000000;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.redes img{
+  width:48px;
+  display: flex;
+}
+
+.designer {
+      position: fixed;
+      width: 100%;
+      color: #000000;
+      line-height: 40px;
+      font-size: 18px;
+      text-align: center;
+      bottom:0;
+  }
